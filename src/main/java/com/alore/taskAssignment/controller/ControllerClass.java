@@ -70,6 +70,7 @@ public class ControllerClass {
 
     @PostMapping(value = "/search_hotels", consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE )
     public ResponseModel searchHotels(@RequestBody SearchDTO searchDTO){
+
         return service.searchHotels(searchDTO);
     }
 
